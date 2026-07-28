@@ -4,7 +4,6 @@ import Container from "../../components/container/Container";
 import Button from "../../components/button/Button";
 import {
   Mail,
-  Phone,
   MapPin,
   Briefcase,
   ArrowUpRight,
