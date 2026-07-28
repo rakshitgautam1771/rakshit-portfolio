@@ -1,77 +1,59 @@
-import Container from "../../components/container/Container";
+import "./hero.css";
+
 import Button from "../../components/button/Button";
-import { ArrowRight, Download } from "lucide-react";
-import profile from "../../assets/profile.jpeg"; // Replace with your image
+import Container from "../../components/container/Container";
+
+import ProfileImage from "../../assets/profile.jpeg";
 
 const Hero = () => {
   return (
-    <section className="hero" id="home">
-
-      <div className="hero-blur hero-blur-1"></div>
-      <div className="hero-blur hero-blur-2"></div>
+    <section className="hero">
 
       <Container>
 
         <div className="hero-wrapper">
 
-          {/* LEFT */}
-
-          <div className="hero-left">
+          {/* Left Content */}
+          <div className="hero-content">
 
             <div className="availability">
               <span className="availability-dot"></span>
-              <span>Available for Work</span>
+              Available for Full-Time Opportunities
             </div>
 
-            <p className="hero-small">
-              HI, I'M
+            <p className="hero-subtitle">
+              UI / UX DESIGNER
             </p>
 
-            <h1>
-              Rakshit <br />
-              <span>Gautam.</span>
+            <h1 className="hero-title">
+              Designing Digital
+              <br />
+              Experiences That
+              <span> People Love.</span>
             </h1>
 
-            <p className="hero-title">
-              Product Designer crafting thoughtful digital experiences.
-            </p>
-
             <p className="hero-description">
-              I design intuitive mobile and web experiences through user
-              research, interaction design, and scalable design systems.
-              My goal is to transform complex problems into simple,
-              meaningful experiences that people genuinely enjoy using.
+              I'm Rakshit, a Product Designer passionate about creating
+              intuitive, user-centered digital experiences that solve real
+              problems and leave a lasting impression.
             </p>
 
-            <div className="hero-buttons">
-
-              <Button>
-                <a href="#work">View Projects</a>
-                <ArrowRight size={18} />
-              </Button>
-
-              <Button>
-                <Download size={18} />
-                Resume
-              </Button>
-
+            <div className="hero-actions">
+              <Button><a href="#work">View Projects</a></Button>
+              <Button className="btn btn-secondary">Download Resume</Button>
             </div>
 
           </div>
 
-          {/* RIGHT */}
+          {/* Right Image */}
 
-          <div className="hero-right">
+          <div className="hero-image-wrapper">
 
-            <div className="hero-image-wrapper">
-
-              <img
-                src={profile}
-                alt="Rakshit Gautam"
-                className="hero-image"
-              />
-
-            </div>
+            <img
+              src={ProfileImage}
+              alt="Rakshit Gautam"
+              className="hero-image"
+            />
 
           </div>
 

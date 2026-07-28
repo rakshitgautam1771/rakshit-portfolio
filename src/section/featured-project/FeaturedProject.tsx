@@ -1,65 +1,90 @@
-import Container from "../../components/container/Container";
+import "./featuredProject.css";
+
 import Button from "../../components/button/Button";
-import  Project from "../../assets/Project.png";
+import Container from "../../components/container/Container";
+
+import TripNest from "../../assets/Project.png";
 
 const FeaturedProject = () => {
-  return (
-    <section className="featured-project" id="work">
+    return (
+        <section id="work" className="featured-project">
 
-      <Container>
+            <Container>
 
-        <p className="section-tag">
-          — FEATURED PROJECT
-        </p>
+                <div className="section-header">
 
-        <h2>
-          Selected Work.
-        </h2>
+                    <p className="section-tag">
+                        FEATURED PROJECT
+                    </p>
 
-        <div className="project-card">
+                    <h2>
+                        Selected Work
+                    </h2>
 
-          <div className="project-content">
+                    <p className="section-description">
+                        A product I've designed from research to high-fidelity UI,
+                        focusing on usability, aesthetics, and real-world problem solving.
+                    </p>
 
-            <p className="project-year">
-              CASE STUDY • 2026
-            </p>
+                </div>
 
-            <h3>
-              TripNest
-            </h3>
+                <div className="project-card">
 
-            <p className="project-subtitle">
-              All-in-One Travel Planning App
-            </p>
+                    <div className="project-image">
 
-            <p className="project-description">
-              TripNest is a travel planning platform that combines destination
-              discovery, itinerary planning, budgeting, bookings, saved places,
-              trip memories and collaboration into one seamless experience.
-            </p>
+                        <img
+                            src={TripNest}
+                            alt="TripNest UI Design"
+                        />
 
-            <Button>
-            <a href="https://www.behance.net/gallery/253357555/TripNest-Travel-Planning-App-UIUX-Case-Study">   View Case Study</a>
-            </Button>
+                    </div>
 
-          </div>
+                    <div className="project-content">
 
-          <div className="project-image">
+                        <span className="project-badge">
+                            Case Study
+                        </span>
 
-             <img
-                src={Project}
-                alt="Rakshit Gautam"
-                className="hero-image"
-              />
+                        <h3>
+                            TripNest
+                        </h3>
 
-          </div>
+                        <p className="project-role">
+                            Product Design • UX Research • UI Design
+                        </p>
 
-        </div>
+                        <p className="project-description">
+                            TripNest is a travel planning platform that allows users
+                            to organize trips, manage itineraries, collaborate with
+                            friends, and track expenses—all from a single application.
+                        </p>
 
-      </Container>
+                        <div className="project-tags">
 
-    </section>
-  );
+                            <span>Figma</span>
+                            <span>Design System</span>
+                            <span>User Research</span>
+                            <span>Prototype</span>
+
+                        </div>
+
+                        <div className="project-buttons">
+
+                            <Button>
+                                <a href="https://www.behance.net/gallery/253357555/TripNest-Travel-Planning-App-UIUX-Case-Study">View Case Study</a>
+                            </Button>
+
+                         
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </Container>
+
+        </section>
+    );
 };
 
 export default FeaturedProject;

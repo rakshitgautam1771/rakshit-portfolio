@@ -1,0 +1,273 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(248, 243, 234, 0.85);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav {
+    height: 88px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo {
+    text-decoration: none;
+
+    font-family: "Instrument Serif", serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    color: var(--color-primary);
+}
+
+/* ==========================================
+   DESKTOP NAVIGATION
+========================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: var(--color-text-light);
+    font-weight: 500;
+
+    transition: color .3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--color-accent);
+
+    transition: width .3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ==========================================
+   DESKTOP BUTTON
+========================================== */
+
+.desktop-btn {
+    display: flex;
+}
+
+/* ==========================================
+   MOBILE MENU BUTTON
+========================================== */
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    color: var(--color-primary);
+
+    padding: .25rem;
+}
+
+/* ==========================================
+   MOBILE MENU
+   (rendered via React Portal into
+   document.body — must sit outside
+   header's backdrop-filter containing
+   block to behave as truly "fixed")
+========================================== */
+
+.mobile-menu {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: flex-end;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity .3s ease;
+
+    z-index: 9999;
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+.mobile-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+    backdrop-filter: blur(6px);
+}
+
+/* ==========================================
+   DRAWER
+========================================== */
+
+.mobile-drawer {
+    position: relative;
+
+    width: 320px;
+    max-width: 85vw;
+    height: 100vh;
+
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    transform: translateX(100%);
+
+    transition: transform .35s ease;
+
+    box-shadow: -10px 0 40px rgba(0,0,0,.15);
+
+    z-index: 2;
+}
+
+.mobile-menu.active .mobile-drawer {
+    transform: translateX(0);
+}
+
+/* ==========================================
+   MOBILE LINKS
+========================================== */
+
+.mobile-drawer a {
+    text-decoration: none;
+
+    color: var(--color-primary);
+
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    transition: color .3s ease;
+}
+.text{
+    color: white !important; 
+}
+.mobile-drawer a:hover {
+    color: var(--color-accent);
+}
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+.close-btn {
+    position: absolute;
+
+    top: 24px;
+    right: 24px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    color: var(--color-primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        height: 72px;
+    }
+
+    .logo {
+        font-size: 1.9rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .desktop-btn {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mobile-drawer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .logo {
+        font-size: 1.7rem;
+    }
+}

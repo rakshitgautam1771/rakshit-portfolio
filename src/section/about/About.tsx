@@ -1,43 +1,105 @@
+import "./about.css";
+
 import Container from "../../components/container/Container";
 
 const About = () => {
-  return (
-    <section className="about" id="about">
-      <Container>
-        <p className="section-tag">— ABOUT</p>
+    return (
+        <section id="about" className="about">
 
-        <h2>
-          Designing with <span>empathy</span>, shipping with clarity.
-        </h2>
+            <Container>
 
-        <div className="about-content">
-          <p>
-            I'm Rakshit — a product designer who believes great design is
-            invisible. I care about the small details: the tap target that
-            feels right, the copy that removes doubt, and the flow that saves a
-            minute.
-          </p>
+                <div className="section-header">
 
-          <p>
-            My philosophy is simple — start with people, question every screen,
-            and let research and clean visual craft do the heavy lifting.
-          </p>
-        </div>
+                    <p className="section-tag">
+                        ABOUT ME
+                    </p>
 
-        <div className="about-cards">
-          <div className="card">
-            <h4>Location</h4>
-            <p>India</p>
-          </div>
+                    <h2>
+                        Passionate About Building
+                        Beautiful User Experiences
+                    </h2>
 
-          <div className="card">
-            <h4>Role</h4>
-            <p>UI/UX Designer</p>
-          </div>
-        </div>
-      </Container>
-    </section>
-  );
+                </div>
+
+                <div className="about-wrapper">
+
+                    {/* Left */}
+
+                    <div className="about-content">
+
+                        <p>
+                            I'm Rakshit Gautam, a Product Designer passionate
+                            about creating intuitive and visually engaging
+                            digital experiences.
+                        </p>
+
+                        <p>
+                            My focus is on solving real user problems through
+                            research, interaction design, and clean visual
+                            interfaces. I enjoy transforming complex ideas into
+                            simple, meaningful products.
+                        </p>
+
+                        <p>
+                            Currently I'm building case studies, improving my
+                            design process, and exploring design systems,
+                            accessibility, and modern product thinking.
+                        </p>
+
+                    </div>
+
+                    {/* Right */}
+
+                    <div className="about-cards">
+
+                        <div className="about-card">
+
+                            <h3>1</h3>
+
+                            <span>
+                               Project
+                            </span>
+
+                        </div>
+
+                        <div className="about-card">
+
+                            <h3>15+</h3>
+
+                            <span>
+                                UI Screens
+                            </span>
+
+                        </div>
+
+                        <div className="about-card">
+
+                            <h3>100%</h3>
+
+                            <span>
+                                User Focused
+                            </span>
+
+                        </div>
+
+                        <div className="about-card">
+
+                            <h3>∞</h3>
+
+                            <span>
+                                Learning Every Day
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </Container>
+
+        </section>
+    );
 };
 
 export default About;

@@ -1,4 +1,5 @@
 import Container from "../../components/container/Container";
+import "./skills.css"
 import {
   Search,
   PencilRuler,

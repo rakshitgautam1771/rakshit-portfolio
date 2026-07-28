@@ -1,0 +1,159 @@
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about{
+    padding:120px 0;
+}
+
+/* ==========================================
+   LAYOUT
+========================================== */
+
+.about-wrapper{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.about-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.about-content p{
+
+    color:var(--color-text-light);
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.about-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.about-card{
+
+    background:#fff;
+
+    border:1px solid var(--color-border);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.3s ease;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.about-card h3{
+
+    font-size:3rem;
+
+    color:var(--color-accent);
+
+    margin-bottom:12px;
+
+}
+
+.about-card span{
+
+    color:var(--color-text-light);
+
+    font-weight:500;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1024px){
+
+    .about-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .about{
+
+        padding:80px 0;
+
+    }
+
+    .about-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    .about-card{
+
+        padding:28px;
+
+    }
+
+    .about-card h3{
+
+        font-size:2.5rem;
+
+    }
+
+}
