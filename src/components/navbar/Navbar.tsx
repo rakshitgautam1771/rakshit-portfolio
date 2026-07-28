@@ -21,13 +21,13 @@ const Navbar = () => {
   }, [menuOpen]);
 
   // close on Escape key
-  useEffect(() => {
-    const onKeyDown = (e) => {
-      if (e.key === "Escape") closeMenu();
-    };
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, []);
+  // useEffect(() => {
+  //   const onKeyDown = (e) => {
+  //     if (e.key === "Escape") closeMenu();
+  //   };
+  //   document.addEventListener("keydown", onKeyDown);
+  //   return () => document.removeEventListener("keydown", onKeyDown);
+  // }, []);
 
   return (
     <header>
