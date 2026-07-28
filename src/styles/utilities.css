@@ -1,0 +1,41 @@
+.container {
+  width: min(var(--container), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary);
+
+  color: white;
+
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: .92;
+}
