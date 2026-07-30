@@ -1,6 +1,5 @@
 import "./featuredProject.css";
 
-import Button from "../../components/button/Button";
 import Container from "../../components/container/Container";
 
 import TripNest from "../../assets/Project.png";
