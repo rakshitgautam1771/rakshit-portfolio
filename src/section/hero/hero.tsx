@@ -33,14 +33,15 @@ const Hero = () => {
             </p>
 
             <div className="hero-actions">
-              <Button>
+              {/* <Button>
                 <a href="#work">View Projects</a>
-              </Button>
-             <a href={Resume} download="Rakshit_Gautam_Resume.pdf">
-  <Button className="btn btn-secondary">
-    Download Resume
-  </Button>
-</a>
+              </Button> */}
+              <a href="#work">
+                <Button className="btn">View Projects</Button>
+              </a>
+              <a href={Resume} download="Rakshit_Gautam_Resume.pdf">
+                <Button className="btn btn-secondary">Download Resume</Button>
+              </a>
             </div>
           </div>
 

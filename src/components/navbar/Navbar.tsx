@@ -49,7 +49,10 @@ const Navbar = () => {
 
           {/* Desktop Button */}
           <div className="desktop-btn">
-            <Button><a href="#contact">Let's Talk</a></Button>
+            {/* <Button><a href="#contact">Let's Talk</a></Button> */}
+            <a href="#contact">
+              <button className="btn">Let's Talk</button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

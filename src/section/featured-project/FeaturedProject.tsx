@@ -70,9 +70,11 @@ const FeaturedProject = () => {
 
                         <div className="project-buttons">
 
-                            <Button>
-                                <a href="https://www.behance.net/gallery/253357555/TripNest-Travel-Planning-App-UIUX-Case-Study">View Case Study</a>
-                            </Button>
+                         
+                                <a href="https://www.behance.net/gallery/253357555/TripNest-Travel-Planning-App-UIUX-Case-Study"><button className="btn">
+                                    View Case Study
+                                    </button></a>
+                         
 
                          
                         </div>
