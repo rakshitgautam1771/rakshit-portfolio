@@ -54,7 +54,7 @@ const About = () => {
 
                         <div className="about-card">
 
-                            <h3>1</h3>
+                            <h3>2</h3>
 
                             <span>
                                Project
@@ -64,7 +64,7 @@ const About = () => {
 
                         <div className="about-card">
 
-                            <h3>15+</h3>
+                            <h3>30+</h3>
 
                             <span>
                                 UI Screens
